@@ -36,6 +36,10 @@ body {
 	background-color: grey;
 }
 
+.contact-btn {
+	color: grey;
+}
+
 #favs { 
 	font-family: 'Six Caps', sans-serif;
 	font-size: 65px;
