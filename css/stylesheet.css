@@ -1,0 +1,45 @@
+body {
+	color: white;
+	font-family: 'Prociono', serif;
+}
+
+.main-heading {
+	font-family: 'Arvo', serif;
+}
+
+.container-fluff {
+	padding: 45px 25px;
+}
+
+.small-marker {
+	margin: 15px 25px;
+}
+
+#portfolio-heading {
+	background-color: chocolate;
+}
+
+#portfolio-heading p {
+	margin: 50px 20px 10px 20px;
+}
+
+#projects {
+	color: black;
+}
+
+
+#skills {
+	background-color: #2BBBAD;
+}
+
+#portfolio-about {
+	background-color: grey;
+}
+
+#favs { 
+	font-family: 'Six Caps', sans-serif;
+	font-size: 65px;
+	color: brown;
+ }
+
+
