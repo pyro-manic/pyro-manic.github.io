@@ -29,11 +29,12 @@
 
 		<!-- Angular -->
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="js/app.js"></script>
 
 	<!-- End CDN Purgatory -->
 
 </head>
-<body ng-app>
+<body ng-app="cv" ng-controller="contentController">
 
 	<nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -59,7 +60,7 @@
 	 <div id="portfolio-heading" class="jumbotron text-center">
 	 	<h2 class="small-marker"><small><i class="fa fa-terminal" aria-hidden="true"></i>about_me;</small></h2>
 	 	<h1 class="main-heading" >Who am I, anyway?</h1>
-	 	<p>My name is <strong>Yaniv Sobol</strong> (aka videodrome), and I like making stuff: web apps, games and sprites, but I'm apt to diverge as long as it's in service of making something that I and other people can enjoy. My home is, and always had been in sunny Israel- in or around its great beaches, food and lively dev communities. Have a look and feel free to try things out, break them and/or contact me if you'd like to employ a twenty-something who generally prefers working with good people over getting cushy amenities.</p>
+	 	<p>My name is {{name}} (aka videodrome), and I like making stuff: web apps, games and sprites, but I'm apt to diverge as long as it's in service of making something that I and other people can enjoy. My home is, and always had been in sunny Israel- in or around its great beaches, food and lively dev communities. Have a look and feel free to try things out, break them and/or contact me if you'd like to employ a twenty-something who generally prefers working with good people over getting cushy amenities.</p>
 	 </div>
 
 	 <div id="projects" class="container-fluid text-center">
