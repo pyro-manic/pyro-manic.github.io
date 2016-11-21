@@ -174,13 +174,13 @@
 	 		 <h4>Boring and pragmatic? Rejoice - a list of my notable qualifications:</h4>
 	 		<div class="col-md-4">
 	 			<awesome-icon></awesome-icon>
-	 			<p>Java, C#, JavaScript(ES6), PHP, HTML5, CSS3, SQL, XML, JSON, Python, <abbr title="A lightweight programming language built upon ANSI C. Written like a lovechild of Python and JavaScript">Lua</abbr></p>
-	 			<h2><i class="fa fa-book" aria-hidden="true"></i> Frameworks</h2>
-	 			<p>Bootstrap, jQuery, AngularJS, React</p>
+	 			<p ng-bind="languages"></p>
+	 			<h2><i class="fa fa-book" aria-hidden="true"></i>Language Extensions</h2>
+	 			<p ng-bind="extensions"></p>
 	 		</div>
 	 		<div class="col-md-4">
 	 			<h2><i class="fa fa-laptop" aria-hidden="true"></i> Environments</h2>
-	 			<p>Android Studio, Eclipse, Unity, Sublime Text 3, GitHub, Notepad++, PyCharm, Wordpress, Microsoft Word & Excel, Adobe Photoshop & Illustrator</p>
+	 			<p ng-bind="environments"></p>
 	 			<h1><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</h1>
 	 			<p>John Bryce Hi-Tech College, Codecademy, FreeCodeCamp</p>
 	 			<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#education-expand">Full Disclosure <i class="fa fa-expand" aria-hidden="true"></i></button>
