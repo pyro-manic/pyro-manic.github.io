@@ -15,6 +15,9 @@
 		<!-- Custom stylesheet -->
 		<link rel="stylesheet" href="css/stylesheet.css">
 
+		<!-- Site content -->
+		<script type="text/javascript" src="js/content.js"></script>
+
 		<!-- jQuery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
@@ -34,7 +37,7 @@
 	<!-- End CDN Purgatory -->
 
 </head>
-<body ng-app="cv" ng-controller="contentController">
+<body ng-app="cv" ng-controller="contentController" ng-cloak>
 
 	<nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -170,7 +173,7 @@
 		 	<div class="row container-fluff">
 	 		 <h4>Boring and pragmatic? Rejoice - a list of my notable qualifications:</h4>
 	 		<div class="col-md-4">
-	 			<h2><i class="fa fa-code" aria-hidden="true"></i> Languages</h2>
+	 			<awesome-icon></awesome-icon>
 	 			<p>Java, C#, JavaScript(ES6), PHP, HTML5, CSS3, SQL, XML, JSON, Python, <abbr title="A lightweight programming language built upon ANSI C. Written like a lovechild of Python and JavaScript">Lua</abbr></p>
 	 			<h2><i class="fa fa-book" aria-hidden="true"></i> Frameworks</h2>
 	 			<p>Bootstrap, jQuery, AngularJS, React</p>
@@ -188,8 +191,8 @@
 	 			<h2><i class="fa fa-language" aria-hidden="true"></i> Languages</h2>
 	 			<p>Hebrew (native tongue), Englsh (native level)</p>
 	 		</div>
-	 		<h4>Pompous nerd? Take my JSON resume and leave.</h4>
 	 	</div>
+	 	<h4>Pompous nerd? Take my <a href="#">JSON resume</a> and leave.</h4>
 	 </div>
 
 	 <div id="portfolio-about" class="container-fluid text-center">
