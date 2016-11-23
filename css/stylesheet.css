@@ -1,6 +1,7 @@
 body {
 	color: white;
 	font-family: 'Prociono', serif;
+	padding-top: 50px;
 }
 
 .main-heading {
@@ -38,6 +39,22 @@ body {
 
 .contact-btn {
 	color: grey;
+}
+
+#contact-sec ul a {
+	color: white;
+}
+
+#contact-sec ul li a:hover {
+  display: inline-block;
+  color: #2e9cd6;
+  position: relative;
+  top: -5px;
+}
+
+#contact-sec ul li {
+  display: inline-block;
+  padding: 1em 1.5em;
 }
 
 #favs { 

@@ -53,7 +53,7 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#projects">SKILLS</a></li>
-            <li><a href="#about">CONTACT</a></li>
+            <li><a href="#contact-sec">CONTACT</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -63,20 +63,21 @@
 	 <div id="portfolio-heading" class="jumbotron text-center">
 	 	<h2 class="small-marker"><small><i class="fa fa-terminal" aria-hidden="true"></i>about_me;</small></h2>
 	 	<h1 class="main-heading" >Who am I, anyway?</h1>
-	 	<p>My name is {{name}} (aka videodrome), and I like making stuff: web apps, games and sprites, but I'm apt to diverge as long as it's in service of making something that I and other people can enjoy. My home is, and always had been in sunny Israel- in or around its great beaches, food and lively dev communities. Have a look and feel free to try things out, break them and/or contact me if you'd like to employ a twenty-something who generally prefers working with good people over getting cushy amenities.</p>
+	 	<p>My name is {{name}} (aka videodrome), and I like making stuff. My home is, and always had been in sunny Israel- in or around its great beaches, food and creative communities of all kinds. Have a look and feel free to try things out, break them and/or contact me if you'd like to employ a twenty-something who generally prefers working with good people over getting cushy amenities.</p>
 	 </div>
 
 	 <div id="projects" class="container-fluid text-center">
 	 	<h1 class="small-marker"><small><i class="fa fa-terminal" aria-hidden="true"></i>projects;</small></h1>
 	 	
 		 	<h1 class="main-heading">Look, 'ma!</h1>
-		 	<p style="margin: 50px;" ">The following are solo projects and collaborations I've been involved in. Hopefully they work at the time you're reading this, and haven't been stripped of their API access, browser support or other vital functions. If anything about them piques your interest, feel free to <a href="#portfolio-about">contact</a> me below.</p>
+		 	<p style="margin: 50px 20px;" ">The following are solo projects and collaborations I've been involved in. Hopefully they work at the time you're reading this, and haven't been stripped of their API access, browser support or other vital functions. If anything about them piques your interest, feel free to <a href="#portfolio-about">contact</a> me below.</p>
 
-		 	<!-- Portfolio items below: -->
+		 	<!-- Portfolio items -->
 
 		 	<div class="row container-portitems" ng-controller="modalController">
 				<div class="col-md-4">
-					<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#project-1" ng-bind="modals.ipecac.title"></button>
+					
+					<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#project-1">{{modals.ipecac.title}}</button>
 
 						<!-- Project 1 -->
 						<div id="project-1" class="modal fade" role="dialog">
@@ -84,37 +85,39 @@
 						    <div class="modal-content">
 						      <div class="modal-header">
 						        <button type="button" class="close" data-dismiss="modal">&times;</button>
-						        <h4 class="modal-title" ng-bind="modals.ipecac.title"></h4>
+						        <h4 class="modal-title"> {{modals.ipecac.title}} </h4>
 						      </div>
 						      <div class="modal-body">
-						        <p ng-bind="modals.ipecac.body[0]"></p>
-						        <br><br>
-						        <p ng-bind="modals.ipecac.body[1]"></p>
+						        <p> {{modals.ipecac.body[0]}} 
+						        	<br><br>
+						        	{{modals.ipecac.body[1]}}
+						        </p>
 						      </div>
 						      <div class="modal-footer">
-						        <button type="button" class="btn btn-default" data-dismiss="modal">Got it</button>
+						        <button type="button" class="btn btn-default" data-dismiss="modal">{{terminate}}</button>
 						      </div>
 						    </div>
 
 						  </div>
 						</div>
 				</div>	
-				<div class="col-md-4">
-					<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#project-2">"Rick & Morty" Cipher</button>
 
-					<!-- Project 2 -->
+				<!-- Project 2 -->
+				<div class="col-md-4">
+					
+					<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#project-2">"Rick & Morty" Cipher</button>
 					<div id="project-2" class="modal fade" role="dialog">
 					  <div class="modal-dialog">
 					    <div class="modal-content">
 					      <div class="modal-header">
 					        <button type="button" class="close" data-dismiss="modal">&times;</button>
-					        <h4 class="modal-title">"Rick & Morty" Cipher</h4>
+					        <h4 class="modal-title"> {{modals.rick.title}} </h4>
 					      </div>
 					      <div class="modal-body">
-					        <p>A cipher app that takes text input from the user, and displays it back to the user as if spoken by a drunk Rick of Rick & Morty fame.</p>
+					        <p> {{modals.rick.body}} </p>
 					      </div>
 					      <div class="modal-footer">
-					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					        <button type="button" class="btn btn-default" data-dismiss="modal"> {{terminate}} </button>
 					      </div>
 					    </div>
 
@@ -124,19 +127,20 @@
 
 				<!-- Project 3 -->
 				<div class="col-md-4">
+					
 					<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#project-3">Map Builder</button>
 				<div id="project-3" class="modal fade" role="dialog">
 				  <div class="modal-dialog">
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal">&times;</button>
-				        <h4 class="modal-title">Map Builder</h4>
+				        <h4 class="modal-title">Cheering for Laundry</h4>
 				      </div>
 				      <div class="modal-body">
-				        <p>A collaborative Python project written with another programmer. The project creates a procedurally generated RPG-style map, including room layouts, and converts them to a graphical output.</p>
+				        <p>A sports statistics/betting app simulator.</p>
 				      </div>
 				      <div class="modal-footer">
-				        <button type="button" class="btn btn-default" data-dismiss="modal">Got it</button>
+				        <button type="button" class="btn btn-default" data-dismiss="modal">{{terminate}}</button>
 				      </div>
 				    </div>
 
@@ -150,17 +154,16 @@
 				    <div class="modal-content">
 				      <div class="modal-header">
 				        <button type="button" class="close" data-dismiss="modal">&times;</button>
-				        <h4 class="modal-title">Education</h4>
+				        <h4 class="modal-title"> {{ modals.education.title }} </h4>
 				      </div>
 				      <div class="modal-body text-left">
 				      <ul>
-				      	<li>Mobile Android Application Development, John Bryce Hi-Tech College Tel-Aviv, 2016</li>
-				     	<li>PHP, JavaScript, HTML, Python, ReactJS (online courses, self-paced), Codecademy, 2015-present</li>
+				      	<li ng-repeat="education in modals.education.body"> {{ education }} </li>
 				      </ul>
 				      
 				      </div>
 				      <div class="modal-footer">
-				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-default" data-dismiss="modal"> {{ terminate }} </button>
 				      </div>
 				    </div>
 				  </div>
@@ -182,7 +185,7 @@
 	 			<p ng-bind="environments"></p>
 	 			<h1><i class="fa fa-graduation-cap" aria-hidden="true"></i> Education</h1>
 	 			<p>John Bryce Hi-Tech College, Codecademy, FreeCodeCamp</p>
-	 			<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#education-expand">Full Disclosure <i class="fa fa-expand" aria-hidden="true"></i></button>
+	 			<button type="button" class="btn btn-info" data-toggle="modal" data-target="#education-expand">Full Disclosure <i class="fa fa-expand" aria-hidden="true"></i></button>
 	 		</div>
 	 		<div class="col-md-4">
 	 			<h2><i class="fa fa-angellist" aria-hidden="true"></i> Volunteer Experience</h2>
@@ -191,21 +194,29 @@
 	 			<p>Hebrew (native tongue), Englsh (native level)</p>
 	 		</div>
 	 	</div>
-	 	<h4>Pompous nerd? Take my <a href="#">JSON resume</a> and leave.</h4>
 	 </div>
 
 	 <div id="portfolio-about" class="container-fluid text-center">
 	 		<h2 class="small-marker"><small><i class="fa fa-terminal" aria-hidden="true"></i>contact;</small></h2>
 	 		<h1 class="main-heading">Hit me up:</h1>
 	 		<div class="row">
-	 			<div class="col-md-6">
-	 				<h2>Social Media:</h2>
-	 				<ul >
-	 					<span class="fa-stack fa-lg">
-  						<i class="fa fa-circle fa-stack-2x"></i>
-  						<i class="fa fa-linkedin fa-stack-1x contact-btn"></i>
-						</span>
-
+	 			<div id="contact-sec" class="col-md-6">
+	 				<ul style="list-style: none;">
+	 				<li>
+	 					<a href="https://www.linkedin.com/in/yaniv-sobol" target="self">
+	 						<i class="fa fa-linkedin fa-4x"></i>
+	 					</a>
+	 				</li>
+	 				<li>
+	 					<a href="https://codepen.io/videodrome/" target="self">
+	 						<i class="fa fa-codepen fa-4x"></i>
+	 					</a>
+	 				</li>
+	 				<li>
+	 					<a href="https://github.com/yaniv-sobol/" target="self">
+	 						<i class="fa fa-github fa-4x"></i>
+	 					</a>
+	 				</li>
 	 				</ul>
 	 			</div>
 	 			
