@@ -1,7 +1,20 @@
 body {
-	color: white;
 	font-family: 'Prociono', serif;
 	padding-top: 50px;
+}
+
+#portfolio-heading {
+	background-color: white;
+}
+
+#qa {
+	background-color: chocolate;
+	color: white;
+	padding: 45px 25px;
+}
+
+#qa p {
+	margin-left: 25px;
 }
 
 .main-heading {
@@ -16,15 +29,12 @@ body {
 	margin: 15px 25px;
 }
 
-#portfolio-heading {
-	background-color: chocolate;
-}
-
 #portfolio-heading p {
 	margin: 50px 20px 10px 20px;
 }
 
 #projects {
+	background-color: white;
 	color: black;
 }
 
