@@ -4,7 +4,12 @@ body {
 }
 
 #portfolio-heading {
-	background-color: white;
+	/* Working image background CSS
+	color: white;
+	background-image: url('../tel-aviv.jpg');
+	background-size: 100% 100%;
+	*/
+	background-color: white
 }
 
 #qa {
@@ -15,10 +20,6 @@ body {
 
 #qa p {
 	margin-left: 25px;
-}
-
-.main-heading {
-	font-family: 'Arvo', serif;
 }
 
 .container-fluff {
@@ -51,18 +52,18 @@ body {
 	color: grey;
 }
 
-#contact-sec ul a {
+.contact-sec ul a {
 	color: white;
 }
 
-#contact-sec ul li a:hover {
+.contact-sec ul li a:hover {
   display: inline-block;
   color: #2e9cd6;
   position: relative;
   top: -5px;
 }
 
-#contact-sec ul li {
+.contact-sec ul li {
   display: inline-block;
   padding: 1em 1.5em;
 }
@@ -72,5 +73,3 @@ body {
 	font-size: 65px;
 	color: brown;
  }
-
-

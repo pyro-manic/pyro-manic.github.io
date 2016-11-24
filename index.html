@@ -61,9 +61,9 @@
 
 
 	 <div id="portfolio-heading" class="jumbotron text-center">
-	 	<h2 class="small-marker"><small><i class="fa fa-terminal" aria-hidden="true"></i>about_me;</small></h2>
-	 	<h1 class="main-heading" >Who am I, anyway?</h1>
-	 	<p>My name is {{name}} (aka videodrome), and I like making stuff.</p>
+	 	<h2 class="small-marker"><kbd><small><i class="fa fa-terminal" aria-hidden="true"></i> cd about-me/</small></kbd></h2>
+	 	<h1 id="main-heading" style="font-family: 'Arvo', serif;">Who am I, anyway?</h1>
+	 	<p>My name is {{name}} (nickname videodrome), and I like making stuff.</p>
 	 </div>
 	 <div id="qa" class="container-fluid text-center">
 	 	<h1>Q: Where are you from?</h1>
@@ -75,16 +75,16 @@
 	 </div>
 
 	 <div id="projects" class="container-fluid text-center">
-	 	<h1 class="small-marker"><small><i class="fa fa-terminal" aria-hidden="true"></i>projects;</small></h1>
+	 	<h1 class="small-marker"><kbd><small><i class="fa fa-terminal" aria-hidden="true"></i> cd projects/</small></kbd></h1>
 	 	
 		 	<h1 class="main-heading">Look, 'ma!</h1>
-		 	<h4 style="margin: 50px 20px;" ">I made stuff. Sometimes with friends, sometimes with music, always with curiousity. Hopefully everything works at the time you're reading this, and no app had been robbed of its API access, browser support or other vital functions. If anything piques your interest, I hear you can <a href="#portfolio-about">contact</a> below.</h4>
+		 	<h4 style="margin: 50px 20px;" ">I made stuff. Sometimes with friends, sometimes with music, always with curiousity. Hopefully everything works at the time you're reading this, and no app had been robbed of its API access, browser support or other vital functions. If anything piques your interest, I heard you can <a href="#portfolio-about">contact</a> me below.</h4>
 
 		 	<!-- Portfolio items -->
 
 		 	<div class="row container-portitems" ng-controller="modalController">
 				<div class="col-md-4">
-					
+					<img src="ph.png" class="img-responsive img-thumbnail">
 					<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#project-1">{{modals.ipecac.title}}</button>
 
 						<!-- Project 1 -->
@@ -112,7 +112,7 @@
 
 				<!-- Project 2 -->
 				<div class="col-md-4">
-					
+					<img src="ph.png" class="img-responsive img-thumbnail">
 					<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#project-2">"Rick & Morty" Cipher</button>
 					<div id="project-2" class="modal fade" role="dialog">
 					  <div class="modal-dialog">
@@ -135,7 +135,7 @@
 
 				<!-- Project 3 -->
 				<div class="col-md-4">
-					
+					<img src="ph.png" class="img-responsive img-thumbnail">
 					<button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#project-3">Map Builder</button>
 				<div id="project-3" class="modal fade" role="dialog">
 				  <div class="modal-dialog">
@@ -205,10 +205,10 @@
 	 </div>
 
 	 <div id="portfolio-about" class="container-fluid text-center">
-	 		<h2 class="small-marker"><small><i class="fa fa-terminal" aria-hidden="true"></i>contact;</small></h2>
+	 		<h2 class="small-marker"><kbd><small><i class="fa fa-terminal" aria-hidden="true"></i> cd contact/</small></kbd></h2>
 	 		<h1 class="main-heading">Hit me up:</h1>
 	 		<div class="row">
-	 			<div id="contact-sec" class="col-md-12">
+	 			<div class="col-md-12 contact-sec">
 	 				<ul style="list-style: none;">
 	 				<li>
 	 					<a href="https://www.linkedin.com/in/yaniv-sobol" target="self">
@@ -237,7 +237,7 @@
 	 		</div>
 
 
-	 	 	<h2 class="small-marker"><small><i class="fa fa-terminal" aria-hidden="true"></i>extra;</small></h2>
+	 	 	<h2 class="small-marker"><kbd><small><i class="fa fa-terminal" aria-hidden="true"></i> exit</small></kbd></h2>
 	 	<h1 id="favs" >My favorite things</h1>
 	 	<div style="color: white;" class="row container-fluff">
 	 		<div class="col-md-3">
@@ -248,11 +248,20 @@
 				<br>
 				Binding of Isaac, Spelunky, Half-Life, Team Fortress (Classic, 2), Hotline Miami, Stardew Valley, Super Meat Boy, Minecraft
 				<br><br>
-				<h4>
-					<i class="fa fa-steam-square" aria-hidden="true"></i> Bug me on Steam!
-				<br>
-				<i class="fa fa-twitch" aria-hidden="true"></i> Embarrass me on Twitch!
-				</h4>
+				<div class="contact-sec">
+					<ul>
+					<li>
+	 					<a href="http://steamcommunity.com/profiles/76561197960725227/" target="self">
+	 						<i class="fa fa-steam-square fa-3x"></i>
+	 					</a>
+	 				</li>
+	 				<li>
+	 					<a href="http://steamcommunity.com/profiles/76561197960725227/" target="self">
+	 						<i class="fa fa-twitch fa-3x"></i>
+	 					</a>
+	 				</li>
+					</ul>
+				</div>
 	 		</div>
 	 		<div class="col-md-3">
 	 			<h2>
