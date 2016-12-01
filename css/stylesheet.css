@@ -3,19 +3,26 @@ body {
 	padding-top: 50px;
 }
 
+
 #portfolio-heading {
 	/* Working image background CSS
 	color: white;
 	background-image: url('../tel-aviv.jpg');
 	background-size: 100% 100%;
 	*/
-	background-color: white
+	color: white;
+	background-color: DimGray;
+	margin-bottom: 0px;
+}
+
+#portfolio-heading p {
+	margin: 50px 20px 10px 20px;
 }
 
 #qa {
-	background-color: chocolate;
-	color: white;
-	padding: 45px 25px;
+	background-color: khaki;
+	color: SaddleBrown ;
+	padding: 35px 25px;
 }
 
 #qa p {
@@ -28,10 +35,6 @@ body {
 
 .small-marker {
 	margin: 15px 25px;
-}
-
-#portfolio-heading p {
-	margin: 50px 20px 10px 20px;
 }
 
 #projects {
@@ -67,9 +70,3 @@ body {
   display: inline-block;
   padding: 1em 1.5em;
 }
-
-#favs { 
-	font-family: 'Six Caps', sans-serif;
-	font-size: 65px;
-	color: brown;
- }
